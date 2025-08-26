@@ -1,0 +1,392 @@
+[2025-08-26T19:28:03.293+0000] {processor.py:161} INFO - Started process (PID=170) to work on /opt/airflow/dags/dag.py
+[2025-08-26T19:28:03.295+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag.py for tasks to queue
+[2025-08-26T19:28:03.295+0000] {logging_mixin.py:188} INFO - [2025-08-26T19:28:03.295+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag.py
+[2025-08-26T19:28:03.301+0000] {logging_mixin.py:188} INFO - [2025-08-26T19:28:03.298+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag.py", line 2, in <module>
+    from cosmos import DbtDag, ProjectConfig, ProfileConfig, ExecutionConfig
+ModuleNotFoundError: No module named 'cosmos'
+[2025-08-26T19:28:03.301+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dag.py
+[2025-08-26T19:28:03.308+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag.py took 0.016 seconds
+[2025-08-26T19:28:33.487+0000] {processor.py:161} INFO - Started process (PID=199) to work on /opt/airflow/dags/dag.py
+[2025-08-26T19:28:33.487+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag.py for tasks to queue
+[2025-08-26T19:28:33.488+0000] {logging_mixin.py:188} INFO - [2025-08-26T19:28:33.488+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag.py
+[2025-08-26T19:28:33.493+0000] {logging_mixin.py:188} INFO - [2025-08-26T19:28:33.492+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag.py", line 2, in <module>
+    from cosmos import DbtDag, ProjectConfig, ProfileConfig, ExecutionConfig
+ModuleNotFoundError: No module named 'cosmos'
+[2025-08-26T19:28:33.493+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dag.py
+[2025-08-26T19:28:33.508+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag.py took 0.025 seconds
+[2025-08-26T19:29:11.639+0000] {processor.py:161} INFO - Started process (PID=23) to work on /opt/airflow/dags/dag.py
+[2025-08-26T19:29:11.640+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag.py for tasks to queue
+[2025-08-26T19:29:11.641+0000] {logging_mixin.py:188} INFO - [2025-08-26T19:29:11.641+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag.py
+[2025-08-26T19:29:11.646+0000] {logging_mixin.py:188} INFO - [2025-08-26T19:29:11.644+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag.py", line 2, in <module>
+    from cosmos import DbtDag, ProjectConfig, ProfileConfig, ExecutionConfig
+ModuleNotFoundError: No module named 'cosmos'
+[2025-08-26T19:29:11.647+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dag.py
+[2025-08-26T19:29:11.655+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag.py took 0.018 seconds
+[2025-08-26T19:29:41.950+0000] {processor.py:161} INFO - Started process (PID=70) to work on /opt/airflow/dags/dag.py
+[2025-08-26T19:29:41.951+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag.py for tasks to queue
+[2025-08-26T19:29:41.952+0000] {logging_mixin.py:188} INFO - [2025-08-26T19:29:41.951+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag.py
+[2025-08-26T19:29:41.955+0000] {logging_mixin.py:188} INFO - [2025-08-26T19:29:41.954+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag.py", line 2, in <module>
+    from cosmos import DbtDag, ProjectConfig, ProfileConfig, ExecutionConfig
+ModuleNotFoundError: No module named 'cosmos'
+[2025-08-26T19:29:41.955+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dag.py
+[2025-08-26T19:29:41.968+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag.py took 0.020 seconds
+[2025-08-26T19:29:59.132+0000] {processor.py:161} INFO - Started process (PID=81) to work on /opt/airflow/dags/dag.py
+[2025-08-26T19:29:59.133+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag.py for tasks to queue
+[2025-08-26T19:29:59.134+0000] {logging_mixin.py:188} INFO - [2025-08-26T19:29:59.134+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag.py
+[2025-08-26T19:29:59.140+0000] {logging_mixin.py:188} INFO - [2025-08-26T19:29:59.140+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag.py", line 2, in <module>
+    from cosmos import DbtDag, ProjectConfig, ProfileConfig, ExecutionConfig
+ModuleNotFoundError: No module named 'cosmos'
+[2025-08-26T19:29:59.141+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dag.py
+[2025-08-26T19:29:59.154+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag.py took 0.026 seconds
+[2025-08-26T19:30:00.164+0000] {processor.py:161} INFO - Started process (PID=82) to work on /opt/airflow/dags/dag.py
+[2025-08-26T19:30:00.166+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag.py for tasks to queue
+[2025-08-26T19:30:00.167+0000] {logging_mixin.py:188} INFO - [2025-08-26T19:30:00.167+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag.py
+[2025-08-26T19:30:00.173+0000] {logging_mixin.py:188} INFO - [2025-08-26T19:30:00.173+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag.py", line 2, in <module>
+    from cosmos import DbtDag, ProjectConfig, ProfileConfig, ExecutionConfig
+ModuleNotFoundError: No module named 'cosmos'
+[2025-08-26T19:30:00.174+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dag.py
+[2025-08-26T19:30:00.187+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag.py took 0.026 seconds
+[2025-08-26T19:30:17.378+0000] {processor.py:161} INFO - Started process (PID=99) to work on /opt/airflow/dags/dag.py
+[2025-08-26T19:30:17.379+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag.py for tasks to queue
+[2025-08-26T19:30:17.379+0000] {logging_mixin.py:188} INFO - [2025-08-26T19:30:17.379+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag.py
+[2025-08-26T19:30:17.384+0000] {logging_mixin.py:188} INFO - [2025-08-26T19:30:17.383+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag.py", line 2, in <module>
+    from cosmos import DbtDag, ProjectConfig, ProfileConfig, ExecutionConfig
+ModuleNotFoundError: No module named 'cosmos'
+[2025-08-26T19:30:17.384+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dag.py
+[2025-08-26T19:30:17.394+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag.py took 0.018 seconds
+[2025-08-26T19:30:47.720+0000] {processor.py:161} INFO - Started process (PID=124) to work on /opt/airflow/dags/dag.py
+[2025-08-26T19:30:47.720+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag.py for tasks to queue
+[2025-08-26T19:30:47.720+0000] {logging_mixin.py:188} INFO - [2025-08-26T19:30:47.720+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag.py
+[2025-08-26T19:30:47.722+0000] {logging_mixin.py:188} INFO - [2025-08-26T19:30:47.722+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag.py", line 2, in <module>
+    from cosmos import DbtDag, ProjectConfig, ProfileConfig, ExecutionConfig
+ModuleNotFoundError: No module named 'cosmos'
+[2025-08-26T19:30:47.722+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dag.py
+[2025-08-26T19:30:47.729+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag.py took 0.011 seconds
+[2025-08-26T19:31:18.063+0000] {processor.py:161} INFO - Started process (PID=141) to work on /opt/airflow/dags/dag.py
+[2025-08-26T19:31:18.064+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag.py for tasks to queue
+[2025-08-26T19:31:18.065+0000] {logging_mixin.py:188} INFO - [2025-08-26T19:31:18.065+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag.py
+[2025-08-26T19:31:18.069+0000] {logging_mixin.py:188} INFO - [2025-08-26T19:31:18.068+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag.py", line 2, in <module>
+    from cosmos import DbtDag, ProjectConfig, ProfileConfig, ExecutionConfig
+ModuleNotFoundError: No module named 'cosmos'
+[2025-08-26T19:31:18.069+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dag.py
+[2025-08-26T19:31:18.081+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag.py took 0.021 seconds
+[2025-08-26T19:31:48.358+0000] {processor.py:161} INFO - Started process (PID=166) to work on /opt/airflow/dags/dag.py
+[2025-08-26T19:31:48.359+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag.py for tasks to queue
+[2025-08-26T19:31:48.360+0000] {logging_mixin.py:188} INFO - [2025-08-26T19:31:48.360+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag.py
+[2025-08-26T19:31:48.365+0000] {logging_mixin.py:188} INFO - [2025-08-26T19:31:48.364+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag.py", line 2, in <module>
+    from cosmos import DbtDag, ProjectConfig, ProfileConfig, ExecutionConfig
+ModuleNotFoundError: No module named 'cosmos'
+[2025-08-26T19:31:48.365+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dag.py
+[2025-08-26T19:31:48.385+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag.py took 0.030 seconds
+[2025-08-26T19:32:18.694+0000] {processor.py:161} INFO - Started process (PID=191) to work on /opt/airflow/dags/dag.py
+[2025-08-26T19:32:18.694+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag.py for tasks to queue
+[2025-08-26T19:32:18.694+0000] {logging_mixin.py:188} INFO - [2025-08-26T19:32:18.694+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag.py
+[2025-08-26T19:32:18.696+0000] {logging_mixin.py:188} INFO - [2025-08-26T19:32:18.696+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag.py", line 2, in <module>
+    from cosmos import DbtDag, ProjectConfig, ProfileConfig, ExecutionConfig
+ModuleNotFoundError: No module named 'cosmos'
+[2025-08-26T19:32:18.697+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dag.py
+[2025-08-26T19:32:18.704+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag.py took 0.012 seconds
+[2025-08-26T19:32:49.035+0000] {processor.py:161} INFO - Started process (PID=216) to work on /opt/airflow/dags/dag.py
+[2025-08-26T19:32:49.036+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag.py for tasks to queue
+[2025-08-26T19:32:49.038+0000] {logging_mixin.py:188} INFO - [2025-08-26T19:32:49.038+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag.py
+[2025-08-26T19:32:49.043+0000] {logging_mixin.py:188} INFO - [2025-08-26T19:32:49.042+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag.py", line 2, in <module>
+    from cosmos import DbtDag, ProjectConfig, ProfileConfig, ExecutionConfig
+ModuleNotFoundError: No module named 'cosmos'
+[2025-08-26T19:32:49.044+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dag.py
+[2025-08-26T19:32:49.057+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag.py took 0.025 seconds
+[2025-08-26T19:33:19.336+0000] {processor.py:161} INFO - Started process (PID=241) to work on /opt/airflow/dags/dag.py
+[2025-08-26T19:33:19.336+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag.py for tasks to queue
+[2025-08-26T19:33:19.337+0000] {logging_mixin.py:188} INFO - [2025-08-26T19:33:19.337+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag.py
+[2025-08-26T19:33:19.341+0000] {logging_mixin.py:188} INFO - [2025-08-26T19:33:19.341+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag.py", line 2, in <module>
+    from cosmos import DbtDag, ProjectConfig, ProfileConfig, ExecutionConfig
+ModuleNotFoundError: No module named 'cosmos'
+[2025-08-26T19:33:19.342+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dag.py
+[2025-08-26T19:33:19.351+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag.py took 0.017 seconds
+[2025-08-26T19:33:49.645+0000] {processor.py:161} INFO - Started process (PID=258) to work on /opt/airflow/dags/dag.py
+[2025-08-26T19:33:49.646+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag.py for tasks to queue
+[2025-08-26T19:33:49.646+0000] {logging_mixin.py:188} INFO - [2025-08-26T19:33:49.646+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag.py
+[2025-08-26T19:33:49.651+0000] {logging_mixin.py:188} INFO - [2025-08-26T19:33:49.650+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag.py", line 2, in <module>
+    from cosmos import DbtDag, ProjectConfig, ProfileConfig, ExecutionConfig
+ModuleNotFoundError: No module named 'cosmos'
+[2025-08-26T19:33:49.651+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dag.py
+[2025-08-26T19:33:49.663+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag.py took 0.021 seconds
+[2025-08-26T19:34:19.989+0000] {processor.py:161} INFO - Started process (PID=283) to work on /opt/airflow/dags/dag.py
+[2025-08-26T19:34:19.989+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag.py for tasks to queue
+[2025-08-26T19:34:19.990+0000] {logging_mixin.py:188} INFO - [2025-08-26T19:34:19.990+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag.py
+[2025-08-26T19:34:20.004+0000] {logging_mixin.py:188} INFO - [2025-08-26T19:34:20.003+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag.py", line 2, in <module>
+    from cosmos import DbtDag, ProjectConfig, ProfileConfig, ExecutionConfig
+ModuleNotFoundError: No module named 'cosmos'
+[2025-08-26T19:34:20.004+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dag.py
+[2025-08-26T19:34:20.015+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag.py took 0.028 seconds
+[2025-08-26T19:34:50.302+0000] {processor.py:161} INFO - Started process (PID=308) to work on /opt/airflow/dags/dag.py
+[2025-08-26T19:34:50.303+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag.py for tasks to queue
+[2025-08-26T19:34:50.304+0000] {logging_mixin.py:188} INFO - [2025-08-26T19:34:50.304+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag.py
+[2025-08-26T19:34:50.307+0000] {logging_mixin.py:188} INFO - [2025-08-26T19:34:50.307+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag.py", line 2, in <module>
+    from cosmos import DbtDag, ProjectConfig, ProfileConfig, ExecutionConfig
+ModuleNotFoundError: No module named 'cosmos'
+[2025-08-26T19:34:50.308+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dag.py
+[2025-08-26T19:34:50.320+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag.py took 0.021 seconds
+[2025-08-26T19:35:20.645+0000] {processor.py:161} INFO - Started process (PID=333) to work on /opt/airflow/dags/dag.py
+[2025-08-26T19:35:20.647+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag.py for tasks to queue
+[2025-08-26T19:35:20.647+0000] {logging_mixin.py:188} INFO - [2025-08-26T19:35:20.647+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag.py
+[2025-08-26T19:35:20.651+0000] {logging_mixin.py:188} INFO - [2025-08-26T19:35:20.651+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag.py", line 2, in <module>
+    from cosmos import DbtDag, ProjectConfig, ProfileConfig, ExecutionConfig
+ModuleNotFoundError: No module named 'cosmos'
+[2025-08-26T19:35:20.652+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dag.py
+[2025-08-26T19:35:20.665+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag.py took 0.023 seconds
+[2025-08-26T19:35:50.987+0000] {processor.py:161} INFO - Started process (PID=358) to work on /opt/airflow/dags/dag.py
+[2025-08-26T19:35:50.988+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag.py for tasks to queue
+[2025-08-26T19:35:50.989+0000] {logging_mixin.py:188} INFO - [2025-08-26T19:35:50.988+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag.py
+[2025-08-26T19:35:50.992+0000] {logging_mixin.py:188} INFO - [2025-08-26T19:35:50.992+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag.py", line 2, in <module>
+    from cosmos import DbtDag, ProjectConfig, ProfileConfig, ExecutionConfig
+ModuleNotFoundError: No module named 'cosmos'
+[2025-08-26T19:35:50.993+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dag.py
+[2025-08-26T19:35:51.006+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag.py took 0.022 seconds
+[2025-08-26T19:36:21.248+0000] {processor.py:161} INFO - Started process (PID=375) to work on /opt/airflow/dags/dag.py
+[2025-08-26T19:36:21.249+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag.py for tasks to queue
+[2025-08-26T19:36:21.249+0000] {logging_mixin.py:188} INFO - [2025-08-26T19:36:21.249+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag.py
+[2025-08-26T19:36:21.252+0000] {logging_mixin.py:188} INFO - [2025-08-26T19:36:21.252+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag.py", line 2, in <module>
+    from cosmos import DbtDag, ProjectConfig, ProfileConfig, ExecutionConfig
+ModuleNotFoundError: No module named 'cosmos'
+[2025-08-26T19:36:21.253+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dag.py
+[2025-08-26T19:36:21.265+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag.py took 0.020 seconds
+[2025-08-26T19:36:51.601+0000] {processor.py:161} INFO - Started process (PID=400) to work on /opt/airflow/dags/dag.py
+[2025-08-26T19:36:51.602+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag.py for tasks to queue
+[2025-08-26T19:36:51.603+0000] {logging_mixin.py:188} INFO - [2025-08-26T19:36:51.603+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag.py
+[2025-08-26T19:36:51.607+0000] {logging_mixin.py:188} INFO - [2025-08-26T19:36:51.606+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag.py", line 2, in <module>
+    from cosmos import DbtDag, ProjectConfig, ProfileConfig, ExecutionConfig
+ModuleNotFoundError: No module named 'cosmos'
+[2025-08-26T19:36:51.607+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dag.py
+[2025-08-26T19:36:51.619+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag.py took 0.021 seconds
+[2025-08-26T19:37:21.955+0000] {processor.py:161} INFO - Started process (PID=425) to work on /opt/airflow/dags/dag.py
+[2025-08-26T19:37:21.956+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag.py for tasks to queue
+[2025-08-26T19:37:21.957+0000] {logging_mixin.py:188} INFO - [2025-08-26T19:37:21.957+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag.py
+[2025-08-26T19:37:21.961+0000] {logging_mixin.py:188} INFO - [2025-08-26T19:37:21.960+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag.py", line 2, in <module>
+    from cosmos import DbtDag, ProjectConfig, ProfileConfig, ExecutionConfig
+ModuleNotFoundError: No module named 'cosmos'
+[2025-08-26T19:37:21.961+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dag.py
+[2025-08-26T19:37:21.973+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag.py took 0.021 seconds
+[2025-08-26T19:37:37.073+0000] {processor.py:161} INFO - Started process (PID=441) to work on /opt/airflow/dags/dag.py
+[2025-08-26T19:37:37.074+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag.py for tasks to queue
+[2025-08-26T19:37:37.074+0000] {logging_mixin.py:188} INFO - [2025-08-26T19:37:37.074+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag.py
+[2025-08-26T19:37:37.078+0000] {logging_mixin.py:188} INFO - [2025-08-26T19:37:37.077+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag.py", line 2, in <module>
+    from cosmos import DbtDag, ProjectConfig, ProfileConfig, ExecutionConfig
+ModuleNotFoundError: No module named 'cosmos'
+[2025-08-26T19:37:37.078+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dag.py
+[2025-08-26T19:37:37.084+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag.py took 0.012 seconds
+[2025-08-26T19:37:39.110+0000] {processor.py:161} INFO - Started process (PID=443) to work on /opt/airflow/dags/dag.py
+[2025-08-26T19:37:39.111+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag.py for tasks to queue
+[2025-08-26T19:37:39.111+0000] {logging_mixin.py:188} INFO - [2025-08-26T19:37:39.111+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag.py
+[2025-08-26T19:37:39.116+0000] {logging_mixin.py:188} INFO - [2025-08-26T19:37:39.116+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag.py", line 2, in <module>
+    from cosmos import DbtDag, ProjectConfig, ProfileConfig, ExecutionConfig
+ModuleNotFoundError: No module named 'cosmos'
+[2025-08-26T19:37:39.117+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dag.py
+[2025-08-26T19:37:39.129+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag.py took 0.022 seconds
+[2025-08-26T19:37:46.187+0000] {processor.py:161} INFO - Started process (PID=444) to work on /opt/airflow/dags/dag.py
+[2025-08-26T19:37:46.187+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag.py for tasks to queue
+[2025-08-26T19:37:46.188+0000] {logging_mixin.py:188} INFO - [2025-08-26T19:37:46.188+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag.py
+[2025-08-26T19:37:46.191+0000] {logging_mixin.py:188} INFO - [2025-08-26T19:37:46.191+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag.py", line 2, in <module>
+    from cosmos import DbtDag, ProjectConfig, ProfileConfig, ExecutionConfig
+ModuleNotFoundError: No module named 'cosmos'
+[2025-08-26T19:37:46.191+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dag.py
+[2025-08-26T19:37:46.199+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag.py took 0.014 seconds
+[2025-08-26T19:38:16.509+0000] {processor.py:161} INFO - Started process (PID=469) to work on /opt/airflow/dags/dag.py
+[2025-08-26T19:38:16.510+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag.py for tasks to queue
+[2025-08-26T19:38:16.511+0000] {logging_mixin.py:188} INFO - [2025-08-26T19:38:16.511+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag.py
+[2025-08-26T19:38:16.517+0000] {logging_mixin.py:188} INFO - [2025-08-26T19:38:16.516+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag.py", line 2, in <module>
+    from cosmos import DbtDag, ProjectConfig, ProfileConfig, ExecutionConfig
+ModuleNotFoundError: No module named 'cosmos'
+[2025-08-26T19:38:16.517+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dag.py
+[2025-08-26T19:38:16.532+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag.py took 0.028 seconds
+[2025-08-26T19:38:46.735+0000] {processor.py:161} INFO - Started process (PID=494) to work on /opt/airflow/dags/dag.py
+[2025-08-26T19:38:46.735+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag.py for tasks to queue
+[2025-08-26T19:38:46.736+0000] {logging_mixin.py:188} INFO - [2025-08-26T19:38:46.736+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag.py
+[2025-08-26T19:38:46.740+0000] {logging_mixin.py:188} INFO - [2025-08-26T19:38:46.739+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag.py", line 2, in <module>
+    from cosmos import DbtDag, ProjectConfig, ProfileConfig, ExecutionConfig
+ModuleNotFoundError: No module named 'cosmos'
+[2025-08-26T19:38:46.740+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dag.py
+[2025-08-26T19:38:46.750+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag.py took 0.018 seconds
+[2025-08-26T19:39:17.084+0000] {processor.py:161} INFO - Started process (PID=519) to work on /opt/airflow/dags/dag.py
+[2025-08-26T19:39:17.085+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag.py for tasks to queue
+[2025-08-26T19:39:17.086+0000] {logging_mixin.py:188} INFO - [2025-08-26T19:39:17.086+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag.py
+[2025-08-26T19:39:17.091+0000] {logging_mixin.py:188} INFO - [2025-08-26T19:39:17.090+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag.py", line 2, in <module>
+    from cosmos import DbtDag, ProjectConfig, ProfileConfig, ExecutionConfig
+ModuleNotFoundError: No module named 'cosmos'
+[2025-08-26T19:39:17.091+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dag.py
+[2025-08-26T19:39:17.105+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag.py took 0.025 seconds
+[2025-08-26T19:39:47.466+0000] {processor.py:161} INFO - Started process (PID=543) to work on /opt/airflow/dags/dag.py
+[2025-08-26T19:39:47.467+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag.py for tasks to queue
+[2025-08-26T19:39:47.467+0000] {logging_mixin.py:188} INFO - [2025-08-26T19:39:47.467+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag.py
+[2025-08-26T19:39:47.471+0000] {logging_mixin.py:188} INFO - [2025-08-26T19:39:47.471+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag.py", line 2, in <module>
+    from cosmos import DbtDag, ProjectConfig, ProfileConfig, ExecutionConfig
+ModuleNotFoundError: No module named 'cosmos'
+[2025-08-26T19:39:47.472+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dag.py
+[2025-08-26T19:39:47.483+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag.py took 0.022 seconds
