@@ -19,7 +19,7 @@ jobs:
           python-version: '3.12.9'
 
       - name: Install dbt
-        run: pip install dbt-core==1.9.4 dbt-postgres==1.9.0
+        run: pip install dbt-core==1.7.0 dbt-postgres==1.7.0
 
       - name: Configure dbt profile
         run: |
@@ -40,10 +40,10 @@ jobs:
           EOF
 
       - name: dbt deps
-        working-directory: ./airflow/dbt/jornada_dw
+        working-directory: ./data_warehouse/jornada_dw
         run: dbt deps --profiles-dir ~/.dbt
 
 
       - name: dbt build
-        working-directory: ./airflow/dbt/jornada_dw
+        working-directory: ./data_warehouse/jornada_dw
         run: dbt build --profiles-dir ~/.dbt
