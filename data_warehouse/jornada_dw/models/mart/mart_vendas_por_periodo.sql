@@ -7,7 +7,7 @@
 }}
 
 with fact_pedidos as (
-    select 
+    select
         *,
         cast(dt_pedido as date) as data_pedido
     from {{ ref('int_fact_pedidos') }}
@@ -43,9 +43,9 @@ vendas_por_dia as (
         lag(count(distinct p.sk_pedido)) over (order by d.date_day) as pedidos_dia_anterior
         
     from dim_date d
-    left join fact_pedidos p 
+    left join fact_pedidos p
         on d.date_day = date_trunc('day', p.dt_pedido)
-    where d.date_day between (select min(date_trunc('day', dt_pedido)) from fact_pedidos) 
+    where d.date_day between (select min(date_trunc('day', dt_pedido)) from fact_pedidos)
                          and (select max(date_trunc('day', dt_pedido)) from fact_pedidos)
     group by 1, 2, 3, 4, 5
 ),
@@ -63,10 +63,10 @@ vendas_com_metricas as (
         receita_bruta - receita_dia_anterior as variacao_dia_anterior,
         
         -- Taxa de crescimento
-        case 
-            when receita_dia_anterior > 0 
-            then (receita_bruta - receita_dia_anterior) / receita_dia_anterior 
-            else null 
+        case
+            when receita_dia_anterior > 0
+            then (receita_bruta - receita_dia_anterior) / receita_dia_anterior
+            else null
         end as crescimento_receita_dia_anterior,
         
         -- Dados do mês/ano
@@ -87,8 +87,8 @@ select
     
     -- Sazonalidade (média dos últimos 3 anos para o mesmo mês)
     avg(vd.receita_bruta) over (
-        partition by dd.month_of_year 
-        order by vd.date_day 
+        partition by dd.month_of_year
+        order by vd.date_day
         rows between 2 preceding and current row
     ) as media_movel_sazonal_3anos,
     
@@ -97,4 +97,4 @@ select
     '{{ run_started_at }}' as dbt_loaded_at
 from vendas_com_metricas vd
 left join dim_date dd on vd.date_day = dd.date_day
-order by vd.date_day desc
+order by vd.date_day desc;
