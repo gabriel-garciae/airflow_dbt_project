@@ -1,1 +1,1 @@
-select * from {{ ref('pedidos') }};
+select * from {{ ref('pedidos') }}

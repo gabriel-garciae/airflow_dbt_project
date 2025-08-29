@@ -97,4 +97,4 @@ select
     '{{ run_started_at }}' as dbt_loaded_at
 from vendas_com_metricas vd
 left join dim_date dd on vd.date_day = dd.date_day
-order by vd.date_day desc;
+order by vd.date_day desc

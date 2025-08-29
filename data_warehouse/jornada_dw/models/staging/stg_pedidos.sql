@@ -36,4 +36,4 @@ transformado as (
     from source
 )
 
-select * from transformado;
+select * from transformado

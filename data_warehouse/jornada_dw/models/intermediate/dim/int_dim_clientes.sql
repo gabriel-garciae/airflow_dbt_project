@@ -30,4 +30,4 @@ select
     -- Metadados
     current_timestamp as dbt_updated_at,
     '{{ run_started_at }}' as dbt_loaded_at
-from clientes;
+from clientes

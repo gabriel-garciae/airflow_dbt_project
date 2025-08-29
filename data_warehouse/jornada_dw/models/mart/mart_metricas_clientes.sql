@@ -166,4 +166,4 @@ select
 from pedidos_por_cliente
 order by
     case when valor_total_gasto is null then 1 else 0 end,  -- Inativos por último
-    valor_total_gasto desc;
+    valor_total_gasto desc
