@@ -4,7 +4,7 @@ name: CI
 on:
   pull_request:
     branches:
-      - main 
+      - main
 
 jobs:
   dbt-build:
@@ -16,10 +16,10 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.12.9'
+          python-version: '3.11'
 
       - name: Install dbt
-        run: pip install dbt-core==1.9.4 dbt-postgres==1.9.0
+        run: pip install dbt-core==1.6.0 dbt-postgres==1.6.0
 
       - name: Configure dbt profile
         run: |
@@ -40,10 +40,10 @@ jobs:
           EOF
 
       - name: dbt deps
-        working-directory: jornada_dw
+        working-directory: ./data_warehouse/jornada_dw
         run: dbt deps --profiles-dir ~/.dbt
 
 
       - name: dbt build
-        working-directory: jornada_dw
+        working-directory: ./data_warehouse/jornada_dw
         run: dbt build --profiles-dir ~/.dbt
