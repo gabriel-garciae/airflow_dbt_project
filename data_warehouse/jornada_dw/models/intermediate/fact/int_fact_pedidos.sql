@@ -41,4 +41,3 @@ select
 from pedidos p
 left join dim_clientes dc on p.cpf = dc.cpf
 left join dim_date dd on date_trunc('day', p.dt_pedido) = dd.date_day;
-
