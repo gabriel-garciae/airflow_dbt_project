@@ -59,8 +59,10 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install sqlfluff
-        run: pip install sqlfluff sqlfluff-templater-dbt
+      - name: Install dbt and sqlfluff
+        run: |
+          pip install dbt-core==1.6.0 dbt-postgres==1.6.0
+          pip install sqlfluff sqlfluff-templater-dbt
 
       - name: Configure dbt profile for lint
         run: |
@@ -87,12 +89,5 @@ jobs:
       - name: Run SQLFluff lint
         working-directory: ./data_warehouse/jornada_dw
         run: |
-          # Executar SQLFluff apenas com as regras que queremos
-          sqlfluff lint models/ --dialect postgres --rules LT01,LT12 --disable-progress-bar --nocolor
-          
-          # Se houver erros, mostrar apenas os que importam (LT01, LT12)
-          # e ignorar falsos positivos (TMP, PRS)
+          sqlfluff lint models/ --rules LT01,LT12 --dialect postgres --disable-progress-bar --nocolor
           echo "✅ Linting concluído - apenas regras LT01 e LT12 foram verificadas"
-
-
-
