@@ -1,0 +1,12 @@
+[sqlfluff]
+dialect = postgres
+templater = dbt
+
+[sqlfluff:rules]
+# Ativar apenas as regras que interessam
+LT01 = True   # Sem espaços no final
+LT12 = True   # Arquivo deve terminar com newline
+
+# Desativar erros de template/parsing que não queremos no CI
+TMP = False
+PRS = False
