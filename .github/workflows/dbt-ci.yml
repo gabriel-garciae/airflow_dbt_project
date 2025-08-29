@@ -62,6 +62,25 @@ jobs:
       - name: Install sqlfluff
         run: pip install sqlfluff sqlfluff-templater-dbt
 
+      - name: Configure dbt profile for lint
+        run: |
+          mkdir -p ~/.dbt
+          cat > ~/.dbt/profiles.yml <<EOF
+          jornada_dw:
+            target: prod
+            outputs:
+              prod:
+                type: postgres
+                threads: 4
+                host: ${{ secrets.RAILWAY_DB_HOST }}
+                user: ${{ secrets.RAILWAY_DB_USER }}
+                pass: ${{ secrets.RAILWAY_DB_PASS }}
+                port: ${{ secrets.RAILWAY_DB_PORT }}
+                dbname: ${{ secrets.RAILWAY_DB_NAME }}
+                schema: public
+          EOF
+
       - name: Run SQLFluff lint
         working-directory: ./data_warehouse/jornada_dw
-        run: sqlfluff lint models/ --dialect postgres --templater dbt
+        run: sqlfluff lint models/ --profiles-dir ~/.dbt
+
