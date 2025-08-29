@@ -46,4 +46,22 @@ jobs:
 
       - name: dbt build
         working-directory: ./data_warehouse/jornada_dw
-        run: dbt build --profiles-dir ~/.dbt
+        run: dbt build --profiles-dir ~/.db
+
+  lint-sql:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install sqlfluff
+        run: pip install sqlfluff sqlfluff-templater-dbt
+
+      - name: Run SQLFluff lint
+        working-directory: ./data_warehouse/jornada_dw
+        run: sqlfluff lint models/
