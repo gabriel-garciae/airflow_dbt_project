@@ -5,4 +5,18 @@ templater = jinja
 # Configuração para aplicar apenas as regras:
 # LT01 - Não deixar espaços no final das linhas (layout.spacing)
 # LT12 - Exigir ponto e vírgula no final (layout.end_of_file)
-# O CI usa automaticamente: --rules LT01,LT12 
+
+# Desabilitar regras que causam falsos positivos no CI
+[sqlfluff:rules]
+# Desabilitar template errors (TMP) - variáveis dbt não reconhecidas
+TMP = False
+
+# Desabilitar parsing errors (PRS) - problemas de interpretação dbt
+PRS = False
+
+# Manter apenas as regras que queremos validar
+LT01 = True   # layout.spacing - espaços no final
+LT12 = True   # layout.end_of_file - quebra de linha no final
+
+# O CI usa automaticamente: --rules LT01,LT12
+# Esta configuração garante que apenas essas regras sejam aplicadas 

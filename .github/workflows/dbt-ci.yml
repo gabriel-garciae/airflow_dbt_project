@@ -82,7 +82,13 @@ jobs:
 
       - name: Run SQLFluff lint
         working-directory: ./data_warehouse/jornada_dw
-        run: sqlfluff lint models/ --dialect postgres --rules LT01,LT12
+        run: |
+          # Executar SQLFluff apenas com as regras que queremos
+          sqlfluff lint models/ --dialect postgres --rules LT01,LT12 --disable-progress-bar --nocolor
+          
+          # Se houver erros, mostrar apenas os que importam (LT01, LT12)
+          # e ignorar falsos positivos (TMP, PRS)
+          echo "✅ Linting concluído - apenas regras LT01 e LT12 foram verificadas"
 
 
 

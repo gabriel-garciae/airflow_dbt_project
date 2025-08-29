@@ -77,7 +77,7 @@ vendas_com_metricas as (
 select
     vd.*,
     -- Variação percentual (já calculada na CTE anterior)
-    (coalesce(vd.crescimento_receita_dia_anterior * 100, 0))::numeric(10,2) as variacao_percentual_dia_anterior,
+    (coalesce(vd.crescimento_receita_dia_anterior * 100, 0))::numeric(10, 2) as variacao_percentual_dia_anterior,
 
     -- Comparação com o mesmo dia da semana
     lag(vd.receita_bruta, 7) over (order by vd.date_day) as receita_mesma_semana_anterior,
