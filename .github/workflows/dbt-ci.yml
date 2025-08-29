@@ -46,7 +46,7 @@ jobs:
 
       - name: dbt build
         working-directory: ./data_warehouse/jornada_dw
-        run: dbt build --profiles-dir ~/.db
+        run: dbt build --profiles-dir ~/.dbt
 
   lint-sql:
     runs-on: ubuntu-latest
@@ -64,4 +64,4 @@ jobs:
 
       - name: Run SQLFluff lint
         working-directory: ./data_warehouse/jornada_dw
-        run: sqlfluff lint models/
+        run: sqlfluff lint models/ --dialect postgres --templater dbt

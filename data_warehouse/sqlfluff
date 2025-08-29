@@ -1,0 +1,4 @@
+[sqlfluff]
+dialect = postgres
+templater = dbt
+rules = L003,L016
